@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* LeftBar.css */
+.left-bar {
+    overflow-y: scroll; /* Vertical scrollni ko'rsatadi */
+    -ms-overflow-style: none;  /* Internet Explorer va Edge uchun */
+    scrollbar-width: none; /* Firefox uchun */
+  }
+  
+  .left-bar::-webkit-scrollbar {
+    display: none; /* Chrome va Safari uchun */
+  }
+
+  body {
+    @font-face {
+        font-family: "Circular Std";
+        src: url("/path/to/CircularStd.woff2") format("woff2"),
+            url("/path/to/CircularStd.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
+}
