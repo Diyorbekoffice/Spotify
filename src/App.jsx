@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path='/' element = {<MainLayouts><Home></Home></MainLayouts>}></Route>
         <Route path='/likes' element = {<MainLayouts><Likes></Likes></MainLayouts>}></Route>
-        <Route path='/details/:id' element = {<MainLayouts><Details></Details></MainLayouts>}></Route>
+        <Route path='/playlists/:id' element = {<MainLayouts><Details></Details></MainLayouts>}></Route>
       </Routes>
     </div>
   )

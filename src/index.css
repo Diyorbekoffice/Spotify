@@ -13,6 +13,8 @@
   }
 
   body {
+    background: #000;
+    color: aliceblue;
     @font-face {
         font-family: "Circular Std";
         src: url("/path/to/CircularStd.woff2") format("woff2"),
@@ -20,4 +22,5 @@
         font-weight: normal;
         font-style: normal;
     }
+    
 }

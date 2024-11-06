@@ -27,9 +27,8 @@ http.interceptors.response.use(
             localStorage.removeItem("token");
             getToken();
         } else if (status == 404) {
-            alert("Ma'lumot topilmadi");
+            // alert("Ma'lumot topilmadi");
         } else {
-            alert("Xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring.");
         }
 
         return Promise.reject(error);
