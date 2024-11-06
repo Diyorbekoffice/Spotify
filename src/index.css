@@ -1,15 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* LeftBar.css */
 .left-bar {
-    overflow-y: scroll; /* Vertical scrollni ko'rsatadi */
-    -ms-overflow-style: none;  /* Internet Explorer va Edge uchun */
-    scrollbar-width: none; /* Firefox uchun */
+    overflow-y: scroll; 
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
   }
   
   .left-bar::-webkit-scrollbar {
-    display: none; /* Chrome va Safari uchun */
+    display: none; 
   }
 
   body {

@@ -11,7 +11,7 @@ function Details() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const [audioList, setAudioList] = useState([]);
-  const [playIndex, setPlayIndex] = useState(null); // State to control the play index
+  const [playIndex, setPlayIndex] = useState(null); 
 
   useEffect(() => {
     const fetchSongs = async () => {
@@ -69,7 +69,7 @@ function Details() {
           <div 
             key={song.track.id} 
             className="flex items-center px-4 py-1 bg-slate-950 rounded-lg mb-2 cursor-pointer" 
-            onClick={() => setPlayIndex(index)} // Set play index on click
+            onClick={() => setPlayIndex(index)} 
           >
             <span className="text-gray-400 w-8">{index + 1}</span>
             {song.track.album && song.track.album.images && song.track.album.images.length > 0 ? (
@@ -95,15 +95,14 @@ function Details() {
         ))}
       </div>
 
-      {/* Musiqa pleer komponenti */}
       <ReactJkMusicPlayer
         audioLists={audioList}
         autoPlay={false}
         mode="full"
         theme="dark"
         showDownload={false}
-        playIndex={playIndex} // Set the play index
-        onPlayIndexChange={(index) => setPlayIndex(index)} // Update play index when the song changes
+        playIndex={playIndex} 
+        onPlayIndexChange={(index) => setPlayIndex(index)}
       />
     </div>
   );

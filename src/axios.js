@@ -27,7 +27,6 @@ http.interceptors.response.use(
             localStorage.removeItem("token");
             getToken();
         } else if (status == 404) {
-            // alert("Ma'lumot topilmadi");
         } else {
         }
 

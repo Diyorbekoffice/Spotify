@@ -9,14 +9,14 @@ import Library_S from '../assets/Library_S.svg';
 import LLibrary_S from '../assets/LLibrary_S.svg';
 
 function LeftBar() {
-    const [playlists, setPlaylists] = useState([]); // Playlists ma'lumotlarini saqlash uchun state
+    const [playlists, setPlaylists] = useState([]); 
     const navigate = useNavigate();
 
     useEffect(() => {
         const fetchPlaylists = async () => {
             try {
-                const response = await http.get('featured-playlists'); // 'http' orqali ma'lumot olamiz
-                setPlaylists(response.data.playlists.items); // Javobni state'ga saqlaymiz
+                const response = await http.get('featured-playlists'); 
+                setPlaylists(response.data.playlists.items); 
             } catch (error) {
                 console.error("Ma'lumot olishda xato:", error);
             }
@@ -26,8 +26,8 @@ function LeftBar() {
     }, []);
 
     const capitalizeFirstLetter = (string) => {
-        if (string.length === 0) return string; // Agar string bo'sh bo'lsa, qaytaramiz
-        return string.charAt(0).toUpperCase() + string.slice(1); // Faqat birinchi harfni katta qilamiz
+        if (string.length === 0) return string; 
+        return string.charAt(0).toUpperCase() + string.slice(1); 
     };
 
     function handleHomeNavigate() {
