@@ -34,6 +34,10 @@ function LeftBar() {
         navigate('/');
     }
 
+    function handleLikesNavigate() {
+        navigate('/likes')
+    }
+
     return (
         <div className="left-bar w-[20vw] h-full max-h-[150vh] fixed bg-black overflow-y-auto px-7 py-16 ">
             <div>
@@ -52,7 +56,7 @@ function LeftBar() {
                     <button className='flex items-center gap-5 text-lg hover:text-slate-200 hover:bg-slate-800'>
                         <img className='w-8' src={LLibrary_S} alt="" />Create Playlist
                     </button>
-                    <button className='flex items-center gap-5 text-lg hover:text-slate-200 hover:bg-slate-800'>
+                    <button  onClick={handleLikesNavigate} className='flex items-center gap-5 text-lg hover:text-slate-200 hover:bg-slate-800'>
                         <img className='w-8' src={LikedSongs_S} alt="" />Liked Songs
                     </button>
                 </div>
